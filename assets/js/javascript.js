@@ -1,4 +1,4 @@
-    <script type="text/javascript">
+
       // Initial array of movies
       var topics = ["Spongebob","The Nanny", "Lizzie Mcguire","The Fresh Prince of Belair", "Avatar the Last Airbender","Thats so Raven","Friends","Kim Possible", "The Simpsons", "The Amanda Show","Kenan and Kel"];
           
@@ -52,7 +52,7 @@
         $("#images-2").show();
         
        var queryURL ="https://api.giphy.com/v1/gifs/search?api_key=DhW37vIDfAWJstV4q0wiGIV2wcaqJXRV&q="+ giphy +"&limit=10";
-
+        console.log(giphy)
 
       
       $.ajax({
@@ -66,13 +66,13 @@
             imgURL[i] = response.data[i].images.fixed_height.url;
             //still gif
             stillimgURL[i] = response.data[i].images.fixed_height_still.url; //img div and class  
-            var giphyDiv = $("<div class='topic'>");
+            var giphyDiv = $("<div class='img-div'>");
             //img tag and properties
             var cimg =$("<img>")
             cimg.attr("src", stillimgURL[i]);
             cimg.attr("alt", giphy + " Image #" + i);
             cimg.attr("alt_src", imgURL[i]);
-            cimg.addClass("topic");
+            cimg.addClass("image");
             //append
             giphyDiv.append(cimg); 
             //rating 
@@ -118,4 +118,4 @@
     $(document).on("click", ".topic", displayTopicName);
 
       renderButtons();
-    </script>
+   
