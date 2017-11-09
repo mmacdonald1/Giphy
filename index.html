@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Show Giphy</title>
+     <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+  <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>90's- 2000's Show Giphys</h1>
+
+     <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
+      
+    <div class="col-md-12 text-center">
+        <form id="gif-form">
+          <label for="gif-input">Add a Giphy Topic</label>
+          <input type="text" id="gif-input"><br>
+
+          <!-- Button triggers new movie to be added -->
+          <input id="add-gif" type="submit" value="Add a Topic">
+        </form>
+    </div>
+      <!-- Gifs will get Dumped Here  -->
+      
+    <div class="row images" id="giphy-view">
+                <div id="images-1" class="col-md-6">
+                </div>
+                <div id="images-2" class="col-md-6">
+                </div>
+    </div>
+      
+      
+
+  </div>
+</body>
+    <script src="assets/js/javascript.js"></script>
+
+</html>
