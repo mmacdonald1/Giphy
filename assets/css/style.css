@@ -41,7 +41,12 @@ label{
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-top: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+div.img-div{
+    text-align: center;
+}
+

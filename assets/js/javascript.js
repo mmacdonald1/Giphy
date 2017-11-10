@@ -47,9 +47,11 @@
          // clear image divs
         $("#images-1").empty();
         $("#images-2").empty();
+        $("#images-3").empty();
         // make image divs visible
         $("#images-1").show();
         $("#images-2").show();
+        $("#images-3").show();
         
        var queryURL ="https://api.giphy.com/v1/gifs/search?api_key=DhW37vIDfAWJstV4q0wiGIV2wcaqJXRV&q="+ giphy +"&limit=10";
         console.log(giphy)
@@ -63,9 +65,9 @@
           
           for (var i = 0; i < 10; i++) {
             //animated gif  
-            imgURL[i] = response.data[i].images.fixed_height.url;
+            imgURL[i] = response.data[i].images.fixed_width.url;
             //still gif
-            stillimgURL[i] = response.data[i].images.fixed_height_still.url; //img div and class  
+            stillimgURL[i] = response.data[i].images.fixed_width_still.url; //img div and class  
             var giphyDiv = $("<div class='img-div'>");
             //img tag and properties
             var cimg =$("<img>");
@@ -88,16 +90,18 @@
                         case 2:
                         case 4:
                         case 6:
-                        case 8:
-                            $("#images-1").append(giphyDiv);
+                        $("#images-1").append(giphyDiv);
                             break;
-                        case 1:
+                        case 8:
+                        case 1:    
                         case 3:
+                        $("#images-2").append(giphyDiv);
+                            break;
                         case 5:
                         case 7:
                         case 9:
-                            $("#images-2").append(giphyDiv);
-                            break;
+                         $("#images-3").append(giphyDiv);
+                            break;  
                     }
           }
       });
