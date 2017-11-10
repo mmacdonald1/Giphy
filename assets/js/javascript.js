@@ -68,7 +68,7 @@
             stillimgURL[i] = response.data[i].images.fixed_height_still.url; //img div and class  
             var giphyDiv = $("<div class='img-div'>");
             //img tag and properties
-            var cimg =$("<img>")
+            var cimg =$("<img>");
             cimg.attr("src", stillimgURL[i]);
             cimg.attr("alt", giphy + " Image #" + i);
             cimg.attr("alt_src", imgURL[i]);

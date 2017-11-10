@@ -1,0 +1,47 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #595957;
+    font-size:40px;
+}
+
+.topic{
+    background-color: #6B7A8F;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #F2F3F4;
+    border:none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topic:hover{
+    background-color: #97ACC9;
+}
+
+label{
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   margin-right: 5px;
+   color: #595957;
+}
+
+#buttons-view{
+    text-align: center;
+}
+
+#add-gif{
+  background-color: #f7882F;
+  color: #F2F3F4;
+  border:none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
